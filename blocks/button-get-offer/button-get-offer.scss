@@ -1,0 +1,13 @@
+.button-get-offer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    background-color: $color_blue;
+    color: $color_white;
+    padding: 18px 70px;
+    border: none;
+    font: 700 14px "Gilroy Bold", "Arial", "sans-serif";
+}

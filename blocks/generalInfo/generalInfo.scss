@@ -1,0 +1,26 @@
+.generalInfo__title {
+    font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
+    color: $color_black;
+}
+.generalInfo__subtitle {
+    font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+    color: $color_black;
+}
+
+.generalInfo__title span {
+    color: $color_blue;
+}
+
+.generalInfo__wrapper-recall-time {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 5px;
+    padding: 18px 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px dashed $color_gray;
+    font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
+
+}

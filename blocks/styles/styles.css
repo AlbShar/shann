@@ -1,0 +1,89 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1442px;
+}
+
+.generalInfo__title {
+  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
+  color: #2B2E3E;
+}
+
+.generalInfo__subtitle {
+  font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+  color: #2B2E3E;
+}
+
+.generalInfo__title span {
+  color: #009BFF;
+}
+
+.generalInfo__wrapper-recall-time {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 18px 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px dashed #BFC9E0;
+  font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
+}
+
+.button-call {
+  background-color: rgba(0, 155, 255, 0.1490196078);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+}
+
+.button-get-offer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #009BFF;
+  color: #ffffff;
+  padding: 18px 70px;
+  border: none;
+  font: 700 14px "Gilroy Bold", "Arial", "sans-serif";
+}
+
+.header {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 35px 0;
+}
+
+.header__phone-number {
+  font: 700 14px "Gilroy Bold", "Arial", "sans-serif";
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+
+@media screen and (min-width: 390px) {
+  .header__container {
+    gap: 15px;
+  }
+}
+.body {
+  background-color: #F0F3F9;
+}
+
+/*# sourceMappingURL=styles.css.map */

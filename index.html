@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/styles/fonts.css">
+    <link rel="stylesheet" href="./blocks/styles/styles.css">
+</head>
+<body class="body">
+    <section class="container">
+        <header class="header">
+            <img src="./blocks/header/img/logo.svg" alt="logo" class="header__logo">
+            <article class="header__container">
+                <span class="header__phone-number">8 800 555 80 80</span>
+                <button class="header__button-call button-call">
+                    <img src="./blocks/img/phone.svg" alt="phone" class="button-call__img">
+                </button>
+            </article>
+        </header>
+        <main class="main">
+            <section class="generalInfo">
+                <picture>
+                    <source media="(min-width: 320px)"  srcset="./blocks/generalInfo/img/small-loader.png" type="image/png">
+                    <source media="(min-width: 768px)"  srcset="./blocks/generalInfo/img/large-loader.png" type="image/png">
+                    <img src="./blocks/generalInfo/img/small-loader.png" alt="loader" width="99%"/>
+                </picture>
+                <h1 class="generalInfo__title">электромобильный вилочный погрузчик <span>нового поколения SHANN</span></h1>
+                <h2 class="generalInfo__subtitle">Оставьте заявку и получите консультацию специалиста</h2>
+                <button class="generalInfo__button button-get-offer">Получить предложение</button>
+                <article class="generalInfo__wrapper-recall-time">
+                    <img src="./blocks/img/phone.svg" alt="phone" class="button-call__img">
+                    Перезвоним в течении дня для консультации
+                </article>
+            </section>
+        </main>
+    </section>
+</body>
+</html>
