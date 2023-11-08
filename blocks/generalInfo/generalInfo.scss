@@ -1,10 +1,16 @@
 .generalInfo__title {
     font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
+    margin: 25px 0 15px 0;
     color: $color_black;
 }
 .generalInfo__subtitle {
     font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+    margin: 0;
     color: $color_black;
+}
+
+.generalInfo__button {
+    margin: 30px 0 10px 0;
 }
 
 .generalInfo__title span {
@@ -21,6 +27,12 @@
     width: 100%;
     border-radius: 5px;
     border: 1px dashed $color_gray;
-    font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
-
+    font: 400 12px "Gilroy Medium", "Arial", "sans-serif";
 }
+
+@media screen and (min-width: 390px) {
+    
+.generalInfo__wrapper-recall-time {
+    font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
+}
+  }

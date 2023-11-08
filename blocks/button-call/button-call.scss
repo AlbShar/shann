@@ -5,5 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 11px;
+    padding: 5px;
 }
+
+@media screen and (min-width: 390px) {
+    .button-call {
+        padding: 11px;
+    }
+  }
+  
