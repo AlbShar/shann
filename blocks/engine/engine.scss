@@ -1,12 +1,12 @@
 .engine {
     border-radius: 15px;
-    background-color: $color_blue;
+    background-color: $color_background_engine;
     padding: 50px 19px 92px 19px;
 
 }
 
 .engine__title {
-    color: $color_white-transparency-title;
+    color: $color_text_1_transparency;
     font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
     letter-spacing: -0.6px;
     text-align: center;
@@ -18,7 +18,7 @@
 }
 
 .engine__list-item {
-    color: $color_white;
+    color: $color_text_1;
     font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
 }
 
@@ -47,8 +47,8 @@
     width: 185px;
     height: 185px; 
     border-radius: 50%;
-    color: $color_white-transparency-circle;
-    background-color:  $color_white-transparency-circle;
+    color: $color_circle;
+    background-color:  $color_circle;
     top: 20%;
     right: 2%;
 }

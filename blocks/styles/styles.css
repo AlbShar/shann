@@ -93,7 +93,7 @@
   }
 }
 .button-call {
-  background-color: rgba(0, 155, 255, 0.1490196078);
+  background-color: #D9F0FF;
   border: none;
   border-radius: 5px;
   display: flex;
@@ -181,7 +181,7 @@
   width: 197px;
   border-radius: 10px;
   position: absolute;
-  font: 600 14px "Gilroy Regulat", "Arial", "sans-serif";
+  font: 500 14px "Gilroy Semibold", "Arial", "sans-serif";
   color: #2B2E3E;
   background-color: #F3F5FB;
   top: 65px;
