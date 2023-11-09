@@ -4,6 +4,56 @@
   max-width: 1442px;
 }
 
+.engine {
+  border-radius: 15px;
+  background-color: #009BFF;
+  padding: 50px 19px 92px 19px;
+}
+
+.engine__title {
+  color: rgba(255, 255, 255, 0.8);
+  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
+  letter-spacing: -0.6px;
+  text-align: center;
+  margin: 0;
+}
+
+.engine__list-item {
+  color: #ffffff;
+  font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+}
+
+.engine__list-item:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.engine__list-item:last-child {
+  margin: 0 0 30px 0;
+}
+
+.engine__img {
+  width: 233px;
+  position: relative;
+  z-index: 1;
+}
+
+.engine__wrapper-img {
+  position: relative;
+}
+
+.engine__wrapper-img::after {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+  top: 20%;
+  right: 2%;
+}
+
 .generalInfo__title {
   font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
   margin: 25px 0 15px 0;
