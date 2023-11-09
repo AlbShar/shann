@@ -1,54 +1,82 @@
 .engine {
-    border-radius: 15px;
-    background-color: $color_background_engine;
-    padding: 50px 19px 92px 19px;
-
+  border-radius: 15px;
+  background-color: $color_background_engine;
+  padding: 50px 19px 92px 19px;
 }
 
 .engine__title {
-    color: $color_text_1_transparency;
-    font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
-    letter-spacing: -0.6px;
-    text-align: center;
-    margin: 0;
+  color: $color_text_1;
+  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
+  letter-spacing: -0.6px;
+  line-height: 30px; 
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+.engine__title_color {
+  color: $color_text_1_transparency;
 }
 
 .engine__list {
-
+  margin: 0;
+  padding: 0 0 0 20px;
 }
 
 .engine__list-item {
-    color: $color_text_1;
-    font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+  color: $color_text_1;
+  font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
 }
 
 .engine__list-item:not(:last-child) {
-    margin: 0 0 15px 0;
+  margin: 0 0 15px 0;
 }
 
 .engine__list-item:last-child {
-    margin: 0 0 30px 0;
+  margin: 0 0 30px 0;
 }
 
 .engine__img {
-    width: 233px;
-    position: relative;
-    z-index: 1; 
+  display: block;
+  width: 233px;
+  position: relative;
+  z-index: 1;
 }
 
 .engine__wrapper-img {
-    position: relative;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .engine__wrapper-img::after {
-    position: absolute;
-    content: "";
-    z-index: 0; 
-    width: 185px;
-    height: 185px; 
-    border-radius: 50%;
-    color: $color_circle;
-    background-color:  $color_circle;
-    top: 20%;
-    right: 2%;
+  position: absolute;
+  content: "";
+  z-index: 0;
+  width: 185px;
+  height: 185px;
+  border-radius: 50%;
+  color: $color_circle;
+  background-color: $color_circle;
+  top: 20%;
+  right: -10%;
+}
+
+@media screen and (min-width: 390px) {
+  .engine__img {
+    width: 284px;
+    height: 217px;
+  }
+
+  .engine__wrapper-img::after {
+    width: 226px;
+    height: 226px;
+  }
+
+  
+}
+
+@media screen and (min-width: 768px) {
+.engine__title {
+    line-height: 47px; 
+  }
 }

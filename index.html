@@ -15,22 +15,27 @@
                 <span class="header__phone-number">8 800 555 80 80</span>
                 <button class="header__button-call button-call">
                     <img src="./blocks/img/phone.svg" alt="phone" class="button-call__img">
+                    <span class="button-call__text"> Заказать звонок</span>
                 </button>
             </article>
         </header>
         <main class="main">
             <section class="generalInfo">
-                <picture>
-                    <source media="(min-width: 320px)"  srcset="./blocks/generalInfo/img/small-loader.png" type="image/png">
-                    <source media="(min-width: 768px)"  srcset="./blocks/generalInfo/img/large-loader.png" type="image/png">
-                    <img src="./blocks/generalInfo/img/small-loader.png" alt="loader" width="99%"/>
-                </picture>
-                <h1 class="generalInfo__title">электромобильный вилочный погрузчик <span>нового поколения SHANN</span></h1>
-                <h2 class="generalInfo__subtitle">Оставьте заявку и получите консультацию специалиста</h2>
-                <button class="generalInfo__button button-get-offer">Получить предложение</button>
-                <article class="generalInfo__wrapper-recall-time">
-                    <img src="./blocks/img/phone.svg" alt="phone" class="button-call__img">
-                    <span>Перезвоним в течении дня для консультации</span>
+                <article class="generalInfo__wrapper-imgs">
+                    <img src="./blocks/generalInfo/img/small-loader.png" alt="погрузчик" class="generalInfo__img-small"/>
+                    <img src="./blocks/generalInfo/img/large-loader.png" alt="погрузчик" class="generalInfo__img-large"/>
+                </article>
+                <article class="generalInfo__wrapper-text">
+                    <h1 class="generalInfo__title">электромобильный вилочный погрузчик <span class="generalInfo__title_color">нового поколения SHANN</span></h1>
+                    <h2 class="generalInfo__subtitle">Оставьте заявку и получите консультацию специалиста</h2>
+                    <section  class="generalInfo__wrapper-btn">
+                        <button class="generalInfo__button button-get-offer">Получить предложение</button>
+                        <article class="generalInfo__wrapper-recall-time">
+                            <img src="./blocks/img/phone.svg" alt="phone" class="button-call__img">
+                            <span>Перезвоним в течении дня для консультации</span>
+                        </article>  
+                    </section>
+                    
                 </article>
             </section>
             <section class="technologies">
@@ -43,7 +48,7 @@
                 </article>
             </section>
             <section class="engine">
-                <h3 class="engine__title">двигатель и АКБ</h3>
+                <h3 class="engine__title">двигатель <span class="engine__title_color">и АКБ</span> </h3>
                 <ul class="engine__list">
                     <li class="engine__list-item">1,5 часа составляет время зарядки</li>
                     <li class="engine__list-item">Однократная потребляемая мощность АКБ 15 кВт/ч (30% экономия затрат на электроэнергию) </li>
