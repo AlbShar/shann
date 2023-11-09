@@ -25,6 +25,8 @@
   gap: 5px;
   padding: 18px 10px;
   width: 100%;
+  max-width: 415px;
+  height: 55px;
   border-radius: 5px;
   border: 1px dashed $color_border;
   font: 400 12px "Gilroy Medium", "Arial", "sans-serif";
@@ -55,31 +57,34 @@
 
   .generalInfo__img-large {
     display: block;
-    width: 568px;
+    width: 450px;
+    position: absolute;
+    bottom: -60px;
+    left: -107px;
   }
 
   .generalInfo {
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
+    padding: 60px 0 40px 0;
   }
 
   .generalInfo__wrapper-imgs {
     position: relative;
   }
 
-  .generalInfo__img-large {
-    position: absolute;
-    top: 0;
-    left: -200px;
-  }
+ 
 
   .generalInfo__title {
     font-size: 42px;
+    line-height: 45px;
+    letter-spacing: -1.36px;
   }
 
   .generalInfo__subtitle {
     font-size: 20px;
+    margin: 15px 0 35px 0;
   }
   .generalInfo__wrapper-text {
     max-width: 785px;
@@ -89,12 +94,26 @@
 
 @media screen and (min-width: 1024px) {
   .generalInfo__img-large {
-    width: 670px;
+    width: 570px;
   }
 }
 
 @media screen and (min-width: 1920px) {
+  .generalInfo {
+    padding: 120px 0 85px 0;
+  }
+
   .generalInfo__img-large {
     width: 770px;
+  }
+
+  .generalInfo__subtitle {
+    font-size: 20px;
+    margin: 30px 0 70px 0;
+  }
+
+  .generalInfo__img-large {
+    width: 800px;
+    bottom: -120px;
   }
 }
