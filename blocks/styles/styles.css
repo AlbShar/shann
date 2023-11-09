@@ -141,10 +141,10 @@
     display: block;
     width: 450px;
     position: absolute;
-    bottom: -60px;
-    left: -107px;
+    right: 0;
   }
   .generalInfo {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
@@ -172,20 +172,22 @@
     width: 570px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .generalInfo__img-large {
+    bottom: -60px;
+  }
+}
 @media screen and (min-width: 1920px) {
   .generalInfo {
     padding: 120px 0 85px 0;
   }
   .generalInfo__img-large {
-    width: 770px;
+    width: 800px;
+    bottom: -35px;
   }
   .generalInfo__subtitle {
     font-size: 20px;
     margin: 30px 0 70px 0;
-  }
-  .generalInfo__img-large {
-    width: 800px;
-    bottom: -120px;
   }
 }
 .button-call {
@@ -224,6 +226,11 @@
   .button-call:hover {
     background-color: rgba(0, 155, 255, 0.2);
     color: #009BFF;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button-call {
+    padding: 13px 40px;
   }
 }
 .button-get-offer {
@@ -318,6 +325,7 @@
   top: 65px;
   left: 15%;
   padding: 15px 20px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
 }
 
 .technologies__wrapper-img {
@@ -335,10 +343,48 @@
   color: #009BFF;
 }
 
+.technologies__arrow-left {
+  display: none;
+}
+
 @media screen and (min-width: 390px) {
   .technologies__description {
     padding: 20px 25px;
     left: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .technologies__description {
+    left: 15%;
+  }
+  .technologies__wrappers-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .technologies__img:not(:last-child) {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .technologies__arrow-left {
+    display: block;
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: -17px;
+  }
+  .technologies__description {
+    top: 0;
+    left: 100%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .technologies__wrappers-imgs {
+    gap: 100px;
   }
 }
 .body {

@@ -59,11 +59,11 @@
     display: block;
     width: 450px;
     position: absolute;
-    bottom: -60px;
-    left: -107px;
+    right: 0;
   }
 
   .generalInfo {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
@@ -98,13 +98,20 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .generalInfo__img-large {
+    bottom: -60px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .generalInfo {
     padding: 120px 0 85px 0;
   }
 
   .generalInfo__img-large {
-    width: 770px;
+    width: 800px;
+    bottom: -35px;
   }
 
   .generalInfo__subtitle {
@@ -112,8 +119,5 @@
     margin: 30px 0 70px 0;
   }
 
-  .generalInfo__img-large {
-    width: 800px;
-    bottom: -120px;
-  }
+  
 }
