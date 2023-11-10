@@ -1,0 +1,34 @@
+
+.engine__list-item {
+  color: $color_text_1;
+  font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+}
+
+.engine__list-item:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.engine__list-item:last-child {
+  margin: 0 0 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+
+  .engine__list-item:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .engine__list-item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .engine__list-item {
+    font-size: 24px;
+  }
+}

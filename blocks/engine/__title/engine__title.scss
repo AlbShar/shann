@@ -1,0 +1,44 @@
+@import "./_color/engine__title_color.scss";
+
+.engine__title {
+  position: absolute;
+  z-index: 2;
+  color: $color_text_1;
+  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
+  letter-spacing: -0.6px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .engine__title {
+    line-height: 47px;
+    text-align: left;
+    font-size: 34px;
+    margin: 0 0 10px 0;
+    top: -55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .engine__title {
+    margin: 0 0 -20px 0;
+    top: -30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .engine__title {
+    margin: 0 0 -50px 0;
+    top: 0px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .engine__title {
+    font-size: 68px;
+  }
+}

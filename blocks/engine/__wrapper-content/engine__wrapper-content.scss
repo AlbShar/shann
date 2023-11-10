@@ -1,0 +1,25 @@
+
+.engine__wrapper-content {
+    position: relative;
+  }
+
+@media screen and (min-width: 768px) {
+  .engine__wrapper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .engine__wrapper-content {
+    gap: 70px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .engine__wrapper-content {
+    gap: 194px;
+  }
+}

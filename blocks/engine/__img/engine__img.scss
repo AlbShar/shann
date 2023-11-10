@@ -1,0 +1,32 @@
+.engine__img {
+  display: block;
+  width: 233px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 390px) {
+  .engine__img {
+    width: 284px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .engine__img {
+    width: 305px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .engine__img {
+    width: 447px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .engine__img {
+    width: 597px;
+    
+  }
+}

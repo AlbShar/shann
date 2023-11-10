@@ -1,0 +1,25 @@
+.engine__content {
+  border-radius: 15px;
+  background-color: $color_background_engine;
+  padding: 50px 19px 92px 19px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .engine__content {
+    padding: 120px 80px 80px 80px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .engine__content {
+    padding: 120px 150px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .engine__content {
+    padding: 150px 200px;
+  }
+}

@@ -6,9 +6,13 @@
 @import "./__wrapper-imgs/generalInfo__wrapper-imgs.scss";
 @import "./__wrapper-recall-time/generalInfo__wreapper-recall-time.scss";
 @import "./__wrapper-text/generalInfo__wrapper-text.scss";
+@import "./__container/generalInfo__container.scss";
 
 .generalInfo__content {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .generalInfo {

@@ -1,6 +1,5 @@
 .technologies {
-  padding: 50px 10px;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 
 .technologies__content {
@@ -102,8 +101,8 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .technologies__wrappers-imgs {
-    gap: 100px;
-  }
-}
+// @media screen and (min-width: 1920px) {
+//   .technologies__wrappers-imgs {
+//     gap: 100px;
+//   }
+// }
