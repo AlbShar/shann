@@ -1,6 +1,5 @@
 @import "./__button/generalInfo__button.scss";
 @import "./__img/generalInfo__img.scss";
-@import "./__line/generalInfo__line.scss";
 @import "./__subtitle/generalInfo__subtitle.scss";
 @import "./__title/generalInfo__title.scss";
 @import "./__wrapper-btn/generalInfo__wrapper-btn.scss";
@@ -8,23 +7,39 @@
 @import "./__wrapper-recall-time/generalInfo__wreapper-recall-time.scss";
 @import "./__wrapper-text/generalInfo__wrapper-text.scss";
 
+.generalInfo__content {
+  position: relative;
+}
+
+.generalInfo {
+  background-image: url("../img/decor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
   .generalInfo {
     position: relative;
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
-    padding: 60px 0 40px 0;
+    width: 100%;
+    z-index: 1;
   }
 
-  .generalInfo {
-    position: relative;
-    overflow: hidden;
+  .generalInfo__content {
+    padding: 60px 0 40px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .generalInfo__content {
+    padding: 80px 0 85px 0;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .generalInfo {
+  .generalInfo__content {
     padding: 120px 0 85px 0;
   }
 }
