@@ -1,79 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHANN</title>
-    <link rel="stylesheet" href="./fonts/styles/fonts.css">
-    <link rel="stylesheet" href="./blocks/styles/styles.css">
-</head>
-<body class="body">
-    <section class="container">
-        <header class="header">
-            <img src="./blocks/header/img/logo.svg" alt="logo" class="header__logo">
-            <article class="header__container">
-                <span class="header__phone-number">8 800 555 80 80</span>
-                <button class="header__button-call button-call">
-                    <img src="./blocks/img/phone.svg" alt="phone" class="button-call__img">
-                    <span class="button-call__text"> Заказать звонок</span>
-                </button>
+    <link rel="stylesheet" href="./fonts/styles/fonts.css" />
+    <link rel="stylesheet" href="./blocks/styles/styles.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <section class="header__content">
+          <img
+            src="./blocks/header/img/logo.svg"
+            alt="logo"
+            class="header__logo"
+          />
+          <article class="header__container">
+            <span class="header__phone-number">8 800 555 80 80</span>
+            <button class="header__button-call button-call">
+              <img
+                src="./blocks/img/phone.svg"
+                alt="phone"
+                class="button-call__img"
+              />
+              <span class="button-call__text"> Заказать звонок</span>
+            </button>
+          </article>
+        </section>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="generalInfo">
+            <hr class="generalInfo__line generalInfo__line_first">
+            <!-- <hr class="generalInfo__line generalInfo__line_second">
+            <hr class="generalInfo__line generalInfo__line_third">
+            <hr class="generalInfo__line generalInfo__line_fourth"> -->
+          <img
+            src="./blocks/generalInfo/img/loader.png"
+            alt="погрузчик"
+            class="generalInfo__img"
+          />
+          
+          <article class="generalInfo__wrapper-text">
+            <h1 class="generalInfo__title">
+              электромобильный вилочный погрузчик
+              <span class="generalInfo__title_color"
+                >нового поколения SHANN</span
+              >
+            </h1>
+            <h2 class="generalInfo__subtitle">
+              Оставьте заявку и получите консультацию специалиста
+            </h2>
+            <section class="generalInfo__wrapper-btn">
+              <button class="generalInfo__button button-get-offer">
+                Получить предложение
+              </button>
+              <article class="generalInfo__wrapper-recall-time">
+                <img src="./blocks/img/phone.svg" alt="phone" />
+                <span>Перезвоним в течении дня для консультации</span>
+              </article>
+            </section>
+          </article>
+        </section>
+        <section class="technologies">
+          <h3 class="technologies__title">
+            эволюционные <span>технологии</span>
+          </h3>
+          <h4 class="technologies__subtitle">
+            Технологии электромобиля в вилочном погрузчике
+          </h4>
+          <section class="technologies__wrappers-imgs">
+            <article class="technologies__wrapper-img">
+              <img
+                src="./blocks/technologies/img/img2.png"
+                alt="img2"
+                class="technologies__img"
+              />
             </article>
-        </header>
-        <main class="main">
-            <section class="generalInfo">
-                    <img src="./blocks/generalInfo/img/small-loader.png" alt="погрузчик" class="generalInfo__img-small"/>
-                    <img src="./blocks/generalInfo/img/large-loader.png" alt="погрузчик" class="generalInfo__img-large"/>
-                <article class="generalInfo__wrapper-text">
-                    <h1 class="generalInfo__title">электромобильный вилочный погрузчик <span class="generalInfo__title_color">нового поколения SHANN</span></h1>
-                    <h2 class="generalInfo__subtitle">Оставьте заявку и получите консультацию специалиста</h2>
-                    <section  class="generalInfo__wrapper-btn">
-                        <button class="generalInfo__button button-get-offer">Получить предложение</button>
-                        <article class="generalInfo__wrapper-recall-time">
-                            <img src="./blocks/img/phone.svg" alt="phone">
-                            <span>Перезвоним в течении дня для консультации</span>
-                        </article>  
-                    </section>
-                    
-                </article>
-            </section>
-            <section class="technologies">
-                <h3 class="technologies__title">эволюционные <span>технологии</span></h3>
-                <h4 class="technologies__subtitle">Технологии электромобиля в вилочном погрузчике</h4>
-                <section class="technologies__wrappers-imgs">
-                   <article class="technologies__wrapper-img">
-                        <img src="./blocks/technologies/img/img2.png" alt="img2" class="technologies__img">
-                    </article>
-                    <article class="technologies__wrapper-img">
-                        <img src="./blocks/technologies/img/img1.png" alt="img1" class="technologies__img">
-                        <div class="technologies__description">
-                            <img src="./blocks/technologies/img/arrow-left.svg" alt="стрелка влево" class="technologies__arrow-left">
-                            Корпус изготовлен из высокопрочной стали
-                        </div>
-                    </article>  
-                </section>
-            </section>
-            <section class="engine">
-                <hr class="engine__line engine__line_first">
-                <hr class="engine__line engine__line_second">
-                <hr class="engine__line engine__line_third">
-                <h3 class="engine__title">двигатель <span class="engine__title_color">и АКБ</span> </h3>
-                <section class="engine__wrapper-content">
-                    <article class="engine__wrapper-list">
-                        <ul class="engine__list">
-                            <li class="engine__list-item">1,5 часа составляет время зарядки</li>
-                            <li class="engine__list-item">Однократная потребляемая мощность АКБ 15 кВт/ч (30% экономия затрат на электроэнергию) </li>
-                            <li class="engine__list-item">Интеллектуальный контроль температуры</li>
-                            <li class="engine__list-item">Синхронный двигатель с постоянными магнитами</li>
-                            <li class="engine__list-item">Несколько режимов работы: ECO, STANDARD, POWER</li>
-                        </ul>
-                    </article>
-                    <article class="engine__wrapper-img">
-                        <img src="./blocks/engine/img/engine.png" alt="двигатель" class="engine__img">
-       
-                    </article>
-                </section>
-            </section>
-        </main>
-    </section>
-</body>
+            <article class="technologies__wrapper-img">
+              <img
+                src="./blocks/technologies/img/img1.png"
+                alt="img1"
+                class="technologies__img"
+              />
+              <div class="technologies__description">
+                <img
+                  src="./blocks/technologies/img/arrow-left.svg"
+                  alt="стрелка влево"
+                  class="technologies__arrow-left"
+                />
+                Корпус изготовлен из высокопрочной стали
+              </div>
+            </article>
+          </section>
+        </section>
+        <section class="engine">
+          <hr class="engine__line engine__line_first" />
+          <hr class="engine__line engine__line_second" />
+          <hr class="engine__line engine__line_third" />
+          <h3 class="engine__title">
+            двигатель <span class="engine__title_color">и АКБ</span>
+          </h3>
+          <section class="engine__wrapper-content">
+            <article class="engine__wrapper-list">
+              <ul class="engine__list">
+                <li class="engine__list-item">
+                  1,5 часа составляет время зарядки
+                </li>
+                <li class="engine__list-item">
+                  Однократная потребляемая мощность АКБ 15 кВт/ч (30% экономия
+                  затрат на электроэнергию)
+                </li>
+                <li class="engine__list-item">
+                  Интеллектуальный контроль температуры
+                </li>
+                <li class="engine__list-item">
+                  Синхронный двигатель с постоянными магнитами
+                </li>
+                <li class="engine__list-item">
+                  Несколько режимов работы: ECO, STANDARD, POWER
+                </li>
+              </ul>
+            </article>
+            <article class="engine__wrapper-img">
+              <img
+                src="./blocks/engine/img/engine.png"
+                alt="двигатель"
+                class="engine__img"
+              />
+            </article>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

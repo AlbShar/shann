@@ -3,3 +3,9 @@
     width: 100%;
     max-width: 1442px;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 75%;
+}
+}

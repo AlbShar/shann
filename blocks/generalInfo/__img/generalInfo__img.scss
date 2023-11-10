@@ -1,0 +1,31 @@
+.generalInfo__img {
+  width: 99%;
+}
+
+@media screen and (min-width: 768px) {
+  .generalInfo__img {
+    display: block;
+    width: 450px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .generalInfo__img {
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .generalInfo__img {
+    bottom: -60px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .generalInfo__img {
+    width: 800px;
+    bottom: -35px;
+  }
+}

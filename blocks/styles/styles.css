@@ -4,6 +4,11 @@
   max-width: 1442px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 75%;
+  }
+}
 .engine {
   position: relative;
   border-radius: 15px;
@@ -187,26 +192,105 @@
     font-size: 68px;
   }
 }
-.generalInfo__title {
-  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
-  margin: 25px 0 15px 0;
-  color: #2B2E3E;
+.generalInfo__button {
+  margin: 30px 0 10px 0;
 }
 
+.generalInfo__img {
+  width: 99%;
+}
+
+@media screen and (min-width: 768px) {
+  .generalInfo__img {
+    display: block;
+    width: 450px;
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .generalInfo__img {
+    width: 570px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .generalInfo__img {
+    bottom: -60px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .generalInfo__img {
+    width: 800px;
+    bottom: -35px;
+  }
+}
+.generalInfo__line_first {
+  transform: translateX(-890px) rotate(78deg);
+}
+
+.generalInfo__line {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .generalInfo__line {
+    position: absolute;
+    display: block;
+    content: "_";
+    width: 1730px;
+    height: 40px;
+    opacity: 0.72;
+    z-index: 1;
+    background: linear-gradient(92deg, #dbe1f1, #f3f5fb);
+    filter: blur(9.5px);
+  }
+}
 .generalInfo__subtitle {
   font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
   margin: 0;
   color: #2B2E3E;
 }
 
-.generalInfo__button {
-  margin: 30px 0 10px 0;
+@media screen and (min-width: 768px) {
+  .generalInfo__subtitle {
+    font-size: 20px;
+    margin: 15px 0 35px 0;
+  }
 }
-
+@media screen and (min-width: 1920px) {
+  .generalInfo__subtitle {
+    font-size: 20px;
+    margin: 30px 0 70px 0;
+  }
+}
 .generalInfo__title_color {
   color: #009BFF;
 }
 
+.generalInfo__title {
+  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
+  margin: 25px 0 15px 0;
+  color: #2B2E3E;
+}
+
+@media screen and (min-width: 768px) {
+  .generalInfo__title {
+    font-size: 42px;
+    line-height: 45px;
+    letter-spacing: -1.36px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .generalInfo__wrapper-btn {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .generalInfo__wrapper-imgs {
+    position: relative;
+  }
+}
 .generalInfo__wrapper-recall-time {
   box-sizing: border-box;
   display: flex;
@@ -222,32 +306,18 @@
   font: 400 12px "Gilroy Medium", "Arial", "sans-serif";
 }
 
-.generalInfo__img-small {
-  width: 99%;
-}
-
-.generalInfo__img-large {
-  display: none;
-}
-
 @media screen and (min-width: 390px) {
   .generalInfo__wrapper-recall-time {
     font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
   }
 }
 @media screen and (min-width: 768px) {
-  .generalInfo__img-small {
-    display: none;
+  .generalInfo__wrapper-text {
+    max-width: 785px;
+    width: 54%;
   }
-  .generalInfo__wrapper-btn {
-    display: flex;
-  }
-  .generalInfo__img-large {
-    display: block;
-    width: 450px;
-    position: absolute;
-    right: 0;
-  }
+}
+@media screen and (min-width: 768px) {
   .generalInfo {
     position: relative;
     display: flex;
@@ -255,45 +325,14 @@
     flex-direction: row-reverse;
     padding: 60px 0 40px 0;
   }
-  .generalInfo__wrapper-imgs {
+  .generalInfo {
     position: relative;
-  }
-  .generalInfo__title {
-    font-size: 42px;
-    line-height: 45px;
-    letter-spacing: -1.36px;
-    margin: 0;
-  }
-  .generalInfo__subtitle {
-    font-size: 20px;
-    margin: 15px 0 35px 0;
-  }
-  .generalInfo__wrapper-text {
-    max-width: 785px;
-    width: 54%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .generalInfo__img-large {
-    width: 570px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .generalInfo__img-large {
-    bottom: -60px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1920px) {
   .generalInfo {
     padding: 120px 0 85px 0;
-  }
-  .generalInfo__img-large {
-    width: 800px;
-    bottom: -35px;
-  }
-  .generalInfo__subtitle {
-    font-size: 20px;
-    margin: 30px 0 70px 0;
   }
 }
 .button-call {
@@ -371,6 +410,11 @@
   }
 }
 .header {
+  width: 100%;
+  margin: 0 0 35px 0;
+}
+
+.header__content {
   box-sizing: border-box;
   background-color: #ffffff;
   width: 100%;
@@ -378,7 +422,6 @@
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 35px 0;
 }
 
 .header__phone-number {

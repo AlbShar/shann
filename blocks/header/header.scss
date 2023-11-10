@@ -1,14 +1,16 @@
-
-
 .header {
+   width: 100%;
+   margin: 0 0 35px 0;
+}
+
+.header__content {
     box-sizing: border-box;
-   background-color: $color_text_1;
+   background-color: $color_background_default;
    width: 100%;
    padding: 5px 15px;
    border-radius: 10px;
    display: flex;
    justify-content: space-between;
-   margin: 0 0 35px 0;
 }
 
 .header__phone-number {

@@ -1,67 +1,14 @@
-.generalInfo__title {
-  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
-  margin: 25px 0 15px 0;
-  color: $color_text_default;
-}
-.generalInfo__subtitle {
-  font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
-  margin: 0;
-  color: $color_text_default;
-}
-
-.generalInfo__button {
-  margin: 30px 0 10px 0;
-}
-
-.generalInfo__title_color {
-  color: $color_text_2;
-}
-
-.generalInfo__wrapper-recall-time {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding: 18px 10px;
-  width: 100%;
-  max-width: 415px;
-  height: 55px;
-  border-radius: 5px;
-  border: 1px dashed $color_border;
-  font: 400 12px "Gilroy Medium", "Arial", "sans-serif";
-}
-
-.generalInfo__img-small {
-  width: 99%;
-}
-
-.generalInfo__img-large {
-  display: none;
-}
-
-@media screen and (min-width: 390px) {
-  .generalInfo__wrapper-recall-time {
-    font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
-  }
-}
+@import "./__button/generalInfo__button.scss";
+@import "./__img/generalInfo__img.scss";
+@import "./__line/generalInfo__line.scss";
+@import "./__subtitle/generalInfo__subtitle.scss";
+@import "./__title/generalInfo__title.scss";
+@import "./__wrapper-btn/generalInfo__wrapper-btn.scss";
+@import "./__wrapper-imgs/generalInfo__wrapper-imgs.scss";
+@import "./__wrapper-recall-time/generalInfo__wreapper-recall-time.scss";
+@import "./__wrapper-text/generalInfo__wrapper-text.scss";
 
 @media screen and (min-width: 768px) {
-  .generalInfo__img-small {
-    display: none;
-  }
-
-  .generalInfo__wrapper-btn {
-    display: flex;
-  }
-
-  .generalInfo__img-large {
-    display: block;
-    width: 450px;
-    position: absolute;
-    right: 0;
-  }
-
   .generalInfo {
     position: relative;
     display: flex;
@@ -70,38 +17,9 @@
     padding: 60px 0 40px 0;
   }
 
-  .generalInfo__wrapper-imgs {
+  .generalInfo {
     position: relative;
-  }
-
- 
-
-  .generalInfo__title {
-    font-size: 42px;
-    line-height: 45px;
-    letter-spacing: -1.36px;
-    margin: 0;
-  }
-
-  .generalInfo__subtitle {
-    font-size: 20px;
-    margin: 15px 0 35px 0;
-  }
-  .generalInfo__wrapper-text {
-    max-width: 785px;
-    width: 54%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .generalInfo__img-large {
-    width: 570px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .generalInfo__img-large {
-    bottom: -60px;
+    overflow: hidden;
   }
 }
 
@@ -109,16 +27,4 @@
   .generalInfo {
     padding: 120px 0 85px 0;
   }
-
-  .generalInfo__img-large {
-    width: 800px;
-    bottom: -35px;
-  }
-
-  .generalInfo__subtitle {
-    font-size: 20px;
-    margin: 30px 0 70px 0;
-  }
-
-  
 }

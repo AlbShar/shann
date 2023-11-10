@@ -1,0 +1,21 @@
+.generalInfo__wrapper-recall-time {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 18px 10px;
+  width: 100%;
+  max-width: 415px;
+  height: 55px;
+  border-radius: 5px;
+  border: 1px dashed $color_border;
+  font: 400 12px "Gilroy Medium", "Arial", "sans-serif";
+}
+
+
+@media screen and (min-width: 390px) {
+  .generalInfo__wrapper-recall-time {
+    font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
+  }
+}
