@@ -1,5 +1,4 @@
 @import "./variables.scss";
-
 @import "../container/container.scss";
 @import "../engine/engine.scss";
 @import "../generalInfo/generalInfo.scss";
@@ -7,6 +6,7 @@
 @import "../button-get-offer/button-get-offer.scss";
 @import "../header/header.scss";
 @import "../technologies/technologies.scss";
+@import "../popup/popup.scss";
 
 .body {
   background-color: $color_background;

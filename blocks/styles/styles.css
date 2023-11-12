@@ -646,6 +646,23 @@
   margin: 0 0 20px 0;
 }
 
+.popup {
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 15px;
+}
+@media screen and (max-width: 459.8px) {
+  .popup {
+    padding: 10px;
+  }
+}
+
 .body {
   background-color: #F0F3F9;
 }

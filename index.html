@@ -8,10 +8,28 @@
   <link rel="stylesheet" href="./fonts/styles/fonts.css" />
   <link rel="stylesheet" href="./blocks/styles/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script type="module" src="./blocks/script.js"></script>
+
 </head>
 <body class="body">
   <main class="main">
-    <article class="generalInfo">
+    <section class="popup">
+      <article class="popup__background">
+        <div class="popup__content">
+          <h2 class="popup__title">Оставить заявку на консультацию</h2>
+          <h3 class="popup__subtitle">Оставьте заявку – и наш менеджер свяжется с вами, узнает ваши потребности и предложит идеальный погрузчик под ваши задачи.</h3>
+          <form action="#" class="form">
+            <p><input type="text" class="form__input"></p>
+            <p><input type="tel" class="form__input"></p>
+            <p><input type="email" class="form__input"></p>
+            <p><input type="textarea" class="form__input"></p>
+            <button class="button-get-offer">Отправить заявку</button>
+          </form>
+          <div class="popup__police">Нажимая кнопку «Отправить заявку», вы соглашаетесь с Политикой конфиденциальности</div>
+        </div>
+      </article>
+    </section>
+    <section class="generalInfo">
       <div class="header">
         <div class="generalInfo__container">
           <section class="header__content">
@@ -52,8 +70,8 @@
             </article>
           </div>
         </div>
-    </article>
-    <article class="technologies" >
+    </section>
+    <section class="technologies" >
       <div class="container">
         <div class="technologies__content">
           <h3 class="technologies__title">
@@ -77,8 +95,8 @@
           </section>
         </div>
       </div>
-    </article>
-    <article class="engine" >
+    </section>
+    <section class="engine" >
       <div class="container">
         <div class="engine__content">
          
@@ -112,9 +130,7 @@
           </section>
         </div>
       </div>
-    </article>
-      <script type="module" src="./blocks/script.js"></script>
-
+    </section>
   </main>
 </body>
 
