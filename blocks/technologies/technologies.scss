@@ -1,112 +1,13 @@
+@import "./__arrow-left/technologies__arrow-left.scss";
+@import "./__content/technologies__content.scss";
+@import "./__description/technologies__description.scss";
+@import "./__img/technologies__img.scss";
+@import "./__subtitle/technologies__subtitle.scss";
+@import "./__title/technologies__title.scss";
+@import "./__wrapper-img/technologies__wrapper-img.scss";
+
 .technologies {
   margin: 0 0 20px 0;
 }
 
-.technologies__content {
-  box-sizing: border-box;
-  padding: 50px 10px;
-  background-color: $color_text_1;
-  border-radius: 15px;
-  margin: 0 0 10px 0;
-  position: relative;
-  z-index: 3;
-  width: 100%;
-}
 
-.technologies__title {
-  font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
-  color: $color_text_default;
-  text-align: center;
-  margin: 0;
-}
-
-.technologies__img {
-  display: block;
-  margin: 0 auto;
-}
-
-.technologies__wrapper-img:not(:last-child) {
-  margin: 0 auto 45px auto;
-}
-
-.technologies__description {
-  box-sizing: border-box;
-  width: 197px;
-  border-radius: 10px;
-  position: absolute;
-  font: 500 14px "Gilroy Semibold", "Arial", "sans-serif";
-  color: $color_text_default;
-  background-color: $color_background_description;
-  top: 65px;
-  left: 15%;
-  padding: 15px 20px;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
-}
-
-.technologies__wrapper-img {
-  position: relative;
-}
-
-.technologies__subtitle {
-  font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
-  color: $color_text_default;
-  text-align: center;
-  margin: 15px 0 40px 0;
-}
-.technologies__title span {
-  color: $color_text_2;
-}
-
- .technologies__arrow-left {
-    display: none;
-  }
-
-@media screen and (min-width: 390px) {
-  .technologies__description {
-    padding: 20px 25px;
-    left: 25%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .technologies__description {
-    left: 15%;
-  }
-  .technologies__wrappers-imgs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-
-  .technologies__img:not(:last-child) {
-    margin: 0;
-  }
-
-  .technologies__wrapper-img:not(:last-child) {
-    margin: 0;
-}
-}
-
-@media screen and (min-width: 1440px) {
-  .technologies__arrow-left {
-    display: block;
-    width: 16px;
-    height: 18px;
-    position: absolute;
-    top: 10px;
-    left: -17px;
-  }
-
-  .technologies__description {
-    top: 0;
-    left: 100%;
-  }
-}
-
-// @media screen and (min-width: 1920px) {
-//   .technologies__wrappers-imgs {
-//     gap: 100px;
-//   }
-// }

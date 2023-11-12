@@ -19,3 +19,9 @@
     font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
   }
 }
+
+@media screen and (min-width: 390px) {
+  .generalInfo__wrapper-recall-time {
+    padding: 30px 0;
+}
+}
