@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-.technologies__img:not(:last-child) {
+.technologies__wrapper-img:not(:last-child) {
   margin: 0 auto 45px auto;
 }
 
@@ -83,6 +83,10 @@
   .technologies__img:not(:last-child) {
     margin: 0;
   }
+
+  .technologies__wrapper-img:not(:last-child) {
+    margin: 0;
+}
 }
 
 @media screen and (min-width: 1440px) {
