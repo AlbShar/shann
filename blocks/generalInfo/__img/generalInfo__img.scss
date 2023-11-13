@@ -6,8 +6,7 @@
 @media screen and (min-width: 768px) {
   .generalInfo__img {
     display: block;
-    width: 420px;
-    height: 286px;
+    width: 45%;
     
   }
 }
@@ -21,15 +20,14 @@
 @media screen and (min-width: 1440px) {
   .generalInfo__img {
     bottom: -60px;
-    width: 620px;
-    height: 420px;    
 
   }
 }
 
 @media screen and (min-width: 1920px) {
   .generalInfo__img {
-    width: 800px;
     bottom: -35px;
+    width: 800px;
+    transform: translate(45px, -29px);
   }
 }

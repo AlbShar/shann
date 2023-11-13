@@ -1,11 +1,18 @@
 .technologies__content {
-    box-sizing: border-box;
-    padding: 40px 10px;
-    background-color: $color_text_1;
-    border-radius: 15px;
-    margin: 0 0 28px 0;
-    position: relative;
-    z-index: 3;
-    width: 100%;
+  box-sizing: border-box;
+  padding: 40px 10px;
+  background-color: $color_text_1;
+  border-radius: 15px;
+  margin: 0 0 28px 0;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+@media screen and (min-width: 1920px) {
+  .technologies__content {
+    border-radius: 60px;
+      padding: 120px 0 135px 0;
 
   }
+}

@@ -1,4 +1,5 @@
 .engine__content {
+  box-sizing: border-box;
   border-radius: 15px;
   background-color: $color_background_engine;
   padding: 104px 20px 92px 13px;
@@ -24,6 +25,7 @@
 
 @media screen and (min-width: 1920px) {
   .engine__content {
-    padding: 150px 200px;
+    padding: 268px 200px 180px 200px;
+    border-radius: 60px;
   }
 }

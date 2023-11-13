@@ -5,3 +5,11 @@
   position: relative;
   z-index: 2;
 }
+
+@media screen and (min-width: 1920px) {
+
+  .engine__list {
+  padding: 0 0 0 10px;
+}
+
+}

@@ -1,17 +1,22 @@
 .technologies__arrow-left {
-    display: none;
-  }
-
+  display: none;
+}
 
 @media screen and (min-width: 1440px) {
-    .technologies__arrow-left {
-      display: block;
-      width: 16px;
-      height: 18px;
-      position: absolute;
-      top: 10px;
-      left: -17px;
-    }
-  
-
+  .technologies__arrow-left {
+    display: block;
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: -17px;
   }
+}
+
+
+@media screen and (min-width: 1920px) {
+  .technologies__arrow-left {
+    top: 18px;
+    left: -16px;
+  }
+}

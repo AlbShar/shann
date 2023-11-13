@@ -1,6 +1,13 @@
 @media screen and (min-width: 768px) {
   .generalInfo__wrapper-text {
-    max-width: 785px;
-    width: 54%;
+    max-width: 800px;
+    width: 55%;
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+   .generalInfo__wrapper-text {
+    transform: translate(151px, 0);
   }
 }

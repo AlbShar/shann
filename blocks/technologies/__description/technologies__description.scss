@@ -1,35 +1,44 @@
 .technologies__description {
-    box-sizing: border-box;
-    width: 197px;
-    border-radius: 10px;
-    position: absolute;
-    font: 500 14px "Gilroy Semibold", "Arial", "sans-serif";
-    color: $color_text_default;
-    background-color: $color_background_description;
-    top: 65px;
+  box-sizing: border-box;
+  width: 197px;
+  border-radius: 10px;
+  position: absolute;
+  font: 500 14px "Gilroy Semibold", "Arial", "sans-serif";
+  color: $color_text_default;
+  background-color: $color_background_description;
+  top: 65px;
+  left: 15%;
+  padding: 15px 20px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 380px) {
+  .technologies__description {
+    padding: 20px 25px;
+    left: 18%;
+    top: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .technologies__description {
     left: 15%;
-    padding: 15px 20px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
   }
-
-  @media screen and (min-width: 380px) {
-    .technologies__description {
-      padding: 20px 25px;
-      left: 18%;
-      top: 15%;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .technologies__description {
-      left: 15%;
-    }
-  }
-
+}
 
 @media screen and (min-width: 1440px) {
   .technologies__description {
     top: 0;
     left: 100%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .technologies__description {
+    top: -5px;
+    left: 112%;
+    padding: 28px 30px;
+    width: 100%;
+    max-width: 228px;
   }
 }

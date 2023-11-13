@@ -23,3 +23,15 @@
     height: 226px;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .engine__wrapper-img {
+    transform: translate(0, -83px);
+  }
+
+  .engine__wrapper-img::after {
+    width: 475px;
+    height: 475px;
+    top: 15%;
+  }
+}

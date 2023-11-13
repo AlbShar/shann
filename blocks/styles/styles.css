@@ -5,6 +5,8 @@
 }
 
 .engine__content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 15px;
   background-color: #009BFF;
   padding: 104px 20px 92px 13px;
@@ -26,7 +28,8 @@
 }
 @media screen and (min-width: 1920px) {
   .engine__content {
-    padding: 150px 200px;
+    padding: 268px 200px 180px 200px;
+    border-radius: 60px;
   }
 }
 .engine__img {
@@ -45,6 +48,7 @@
 @media screen and (min-width: 768px) {
   .engine__img {
     width: 305px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -84,6 +88,10 @@
 @media screen and (min-width: 1920px) {
   .engine__list-item {
     font-size: 24px;
+    line-height: 35px;
+  }
+  .engine__list-item:not(:last-child) {
+    margin: 0 0 25px 0;
   }
 }
 .engine__list {
@@ -94,6 +102,11 @@
   z-index: 2;
 }
 
+@media screen and (min-width: 1920px) {
+  .engine__list {
+    padding: 0 0 0 10px;
+  }
+}
 .engine__title_color {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -196,6 +209,17 @@
     height: 226px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .engine__wrapper-img {
+    -webkit-transform: translate(0, -83px);
+            transform: translate(0, -83px);
+  }
+  .engine__wrapper-img::after {
+    width: 475px;
+    height: 475px;
+    top: 15%;
+  }
+}
 .engine {
   position: relative;
   z-index: 3;
@@ -203,11 +227,6 @@
   width: 100%;
 }
 
-@media screen and (min-width: 1920px) {
-  .engine__content {
-    padding: 200px 247px;
-  }
-}
 .generalInfo__button {
   margin: 30px 0 10px 0;
 }
@@ -220,8 +239,7 @@
 @media screen and (min-width: 768px) {
   .generalInfo__img {
     display: block;
-    width: 420px;
-    height: 286px;
+    width: 45%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -232,14 +250,14 @@
 @media screen and (min-width: 1440px) {
   .generalInfo__img {
     bottom: -60px;
-    width: 620px;
-    height: 420px;
   }
 }
 @media screen and (min-width: 1920px) {
   .generalInfo__img {
-    width: 800px;
     bottom: -35px;
+    width: 800px;
+    -webkit-transform: translate(45px, -29px);
+            transform: translate(45px, -29px);
   }
 }
 .generalInfo__subtitle {
@@ -257,7 +275,7 @@
 @media screen and (min-width: 1920px) {
   .generalInfo__subtitle {
     font-size: 20px;
-    margin: 30px 0 70px 0;
+    margin: 40px 0 75px 0;
   }
 }
 .generalInfo__title_color {
@@ -270,6 +288,8 @@
   color: #2B2E3E;
   line-height: 30px;
   letter-spacing: -0.6px;
+  white-space: pre;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -285,20 +305,19 @@
   .generalInfo__title {
     font-size: 36px;
     line-height: 36px;
+    max-width: 804px;
   }
 }
 @media screen and (min-width: 1440px) {
   .generalInfo__title {
     font-size: 51px;
     line-height: 51px;
-    max-width: 470px;
   }
 }
 @media screen and (min-width: 1920px) {
   .generalInfo__title {
     font-size: 68px;
     line-height: 65px;
-    max-width: 635px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -347,8 +366,14 @@
 }
 @media screen and (min-width: 768px) {
   .generalInfo__wrapper-text {
-    max-width: 785px;
-    width: 54%;
+    max-width: 800px;
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .generalInfo__wrapper-text {
+    -webkit-transform: translate(151px, 0);
+            transform: translate(151px, 0);
   }
 }
 .generalInfo__container {
@@ -399,7 +424,7 @@
 }
 @media screen and (min-width: 1920px) {
   .generalInfo__content {
-    padding: 120px 0 85px 0;
+    padding: 145px 0 110px 0;
   }
 }
 .button-call {
@@ -451,6 +476,11 @@
     padding: 13px 40px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .button-call {
+    padding: 15px 40px;
+  }
+}
 .button-get-offer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -496,6 +526,11 @@
   margin: 0 0 15px 0;
 }
 
+.header__logo {
+  width: 123px;
+  height: 15px;
+}
+
 .header__content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -509,6 +544,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   z-index: 2;
 }
@@ -538,6 +576,23 @@
     padding: 15px;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__phone-number {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header__content {
+    padding: 20px 10px 15px 25px;
+  }
+  .header__logo {
+    width: 164px;
+    height: 20px;
+  }
+  .header__container {
+    gap: 40px;
+  }
+}
 .technologies__arrow-left {
   display: none;
 }
@@ -552,6 +607,12 @@
     left: -17px;
   }
 }
+@media screen and (min-width: 1920px) {
+  .technologies__arrow-left {
+    top: 18px;
+    left: -16px;
+  }
+}
 .technologies__content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -564,6 +625,12 @@
   width: 100%;
 }
 
+@media screen and (min-width: 1920px) {
+  .technologies__content {
+    border-radius: 60px;
+    padding: 120px 0 135px 0;
+  }
+}
 .technologies__description {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -598,6 +665,15 @@
     left: 100%;
   }
 }
+@media screen and (min-width: 1920px) {
+  .technologies__description {
+    top: -5px;
+    left: 112%;
+    padding: 28px 30px;
+    width: 100%;
+    max-width: 228px;
+  }
+}
 .technologies__img {
   display: block;
   margin: 0 auto;
@@ -618,6 +694,14 @@
   line-height: 20px;
 }
 
+@media screen and (min-width: 1920px) {
+  .technologies__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: none;
+    margin: 35px auto 60px auto;
+  }
+}
 .technologies__title_color {
   color: #009BFF;
 }
@@ -631,6 +715,14 @@
   letter-spacing: -0.6px;
 }
 
+@media screen and (min-width: 1920px) {
+  .technologies__title {
+    font-size: 68px;
+    line-height: 65px;
+    letter-spacing: -1.36px;
+    margin: 11px 0 0 0;
+  }
+}
 .technologies__wrapper-img:not(:last-child) {
   margin: 0 auto 45px auto;
 }
@@ -658,6 +750,11 @@
   }
   .technologies__wrapper-img:not(:last-child) {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .technologies__wrappers-imgs {
+    gap: 100px;
   }
 }
 .technologies {

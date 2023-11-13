@@ -7,3 +7,12 @@
     width: 100%;
     line-height: 20px;
   }
+
+  @media screen and (min-width: 1920px) {
+  .technologies__subtitle  {
+    font-size: 24px;
+    line-height: 30px; 
+    max-width: none;
+    margin: 35px auto 60px auto ;
+  }
+}
