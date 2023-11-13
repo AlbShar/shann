@@ -7,6 +7,7 @@
   .generalInfo__img {
     display: block;
     width: 45%;
+    height: 250px;
     
   }
 }
@@ -14,6 +15,7 @@
 @media screen and (min-width: 1024px) {
   .generalInfo__img {
     top: 25px;
+    height: auto;
   }
 }
 
