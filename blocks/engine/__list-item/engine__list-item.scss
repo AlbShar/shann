@@ -2,6 +2,7 @@
 .engine__list-item {
   color: $color_text_1;
   font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+  line-height: 20px; 
 }
 
 .engine__list-item:not(:last-child) {

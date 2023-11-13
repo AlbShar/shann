@@ -1,12 +1,12 @@
 .engine__img {
   display: block;
   width: 233px;
-  height: auto;
+  height: 217px;
   position: relative;
   z-index: 1;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .engine__img {
     width: 284px;
   }

@@ -1,35 +1,37 @@
 .header {
-   width: 100%;
-   margin: 0 0 35px 0;
+  width: 100%;
+  margin: 0 0 15px 0;
 }
 
 .header__content {
-    box-sizing: border-box;
-   background-color: $color_background_default;
-   width: 100%;
-   padding: 5px 15px;
-   border-radius: 10px;
-   display: flex;
-   justify-content: space-between;
-      position: relative;
-   z-index: 2;
-
+  box-sizing: border-box;
+  background-color: $color_background_default;
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .header__phone-number {
-    font: 700 14px "Gilroy Bold", "Arial", "sans-serif";
+  font: 700 14px "Gilroy Bold", "Arial", "sans-serif";
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    gap: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .header__container {
-    gap: 15px;
-}
-}
+    gap: 10px;
+  }
 
+  .header__content {
+    padding: 15px;
+  }
+}

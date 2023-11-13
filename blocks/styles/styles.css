@@ -7,11 +7,11 @@
 .engine__content {
   border-radius: 15px;
   background-color: #009BFF;
-  padding: 100px 19px 92px 19px;
+  padding: 104px 20px 92px 13px;
   background-image: url("/blocks/engine/img/engineDecor.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -32,12 +32,12 @@
 .engine__img {
   display: block;
   width: 233px;
-  height: auto;
+  height: 217px;
   position: relative;
   z-index: 1;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .engine__img {
     width: 284px;
   }
@@ -60,6 +60,7 @@
 .engine__list-item {
   color: #ffffff;
   font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
+  line-height: 20px;
 }
 
 .engine__list-item:not(:last-child) {
@@ -106,8 +107,11 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  left: 20px;
-  top: -50px;
+  left: 50%;
+  top: -42px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -170,6 +174,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  height: auto;
 }
 
 .engine__wrapper-img::after {
@@ -181,11 +186,11 @@
   border-radius: 50%;
   color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15);
-  top: 20%;
-  right: -10%;
+  top: 18%;
+  right: -5%;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .engine__wrapper-img::after {
     width: 226px;
     height: 226px;
@@ -239,8 +244,8 @@
 }
 .generalInfo__subtitle {
   font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
-  margin: 0;
   color: #2B2E3E;
+  line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -261,8 +266,10 @@
 
 .generalInfo__title {
   font: 700 30px "Gilroy Bold", "Arial", "sans-serif";
-  margin: 25px 0 15px 0;
+  margin: 35px 0 20px 5px;
   color: #2B2E3E;
+  line-height: 30px;
+  letter-spacing: -0.6px;
 }
 
 @media screen and (min-width: 768px) {
@@ -328,12 +335,12 @@
   font: 400 12px "Gilroy Medium", "Arial", "sans-serif";
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .generalInfo__wrapper-recall-time {
     font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
   }
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .generalInfo__wrapper-recall-time {
     padding: 30px 0;
   }
@@ -416,7 +423,7 @@
   display: none;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .button-call {
     padding: 11px;
   }
@@ -466,7 +473,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .button-get-offer {
     padding: 18px 97px;
   }
@@ -486,7 +493,7 @@
 }
 .header {
   width: 100%;
-  margin: 0 0 35px 0;
+  margin: 0 0 15px 0;
 }
 
 .header__content {
@@ -523,9 +530,12 @@
   gap: 4px;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .header__container {
-    gap: 15px;
+    gap: 10px;
+  }
+  .header__content {
+    padding: 15px;
   }
 }
 .technologies__arrow-left {
@@ -545,10 +555,10 @@
 .technologies__content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 50px 10px;
+  padding: 40px 10px;
   background-color: #ffffff;
   border-radius: 15px;
-  margin: 0 0 10px 0;
+  margin: 0 0 28px 0;
   position: relative;
   z-index: 3;
   width: 100%;
@@ -570,10 +580,11 @@
           box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .technologies__description {
     padding: 20px 25px;
-    left: 25%;
+    left: 18%;
+    top: 15%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -601,7 +612,10 @@
   font: 500 16px "Gilroy Medium", "Arial", "sans-serif";
   color: #2B2E3E;
   text-align: center;
-  margin: 15px 0 40px 0;
+  margin: 17px auto 40px auto;
+  max-width: 269px;
+  width: 100%;
+  line-height: 20px;
 }
 
 .technologies__title_color {
@@ -613,6 +627,8 @@
   color: #2B2E3E;
   text-align: center;
   margin: 0;
+  line-height: 30px;
+  letter-spacing: -0.6px;
 }
 
 .technologies__wrapper-img:not(:last-child) {
@@ -735,6 +751,7 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 15px;
+  display: none;
 }
 
 .form__input {

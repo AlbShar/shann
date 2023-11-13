@@ -2,6 +2,7 @@
   position: relative;
   width: fit-content;
   margin: 0 auto;
+  height: auto;
 }
 
 .engine__wrapper-img::after {
@@ -13,10 +14,10 @@
   border-radius: 50%;
   color: $color_circle;
   background-color: $color_circle;
-  top: 20%;
-  right: -10%;
+  top: 18%;
+  right: -5%;
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
   .engine__wrapper-img::after {
     width: 226px;
     height: 226px;

@@ -9,8 +9,10 @@
   line-height: 30px;
   text-align: center;
   margin: 0;
-  left: 20px;
-  top: -50px;
+  left: 50%;
+  top: -42px;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
