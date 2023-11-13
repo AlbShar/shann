@@ -54,5 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScrollPosition = currentScrollPosition;
   }
 
-  // window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", handleScroll);
 });

@@ -17,11 +17,12 @@
 @media screen and (min-width: 380px) {
   .generalInfo__wrapper-recall-time {
     font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
+    padding: 30px 0;
   }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 768px) {
   .generalInfo__wrapper-recall-time {
-    padding: 30px 0;
+    padding: 34px 0;
 }
 }

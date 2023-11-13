@@ -18,12 +18,7 @@
 
 @media screen and (min-width: 768px) {
   .engine__content {
-    padding: 120px 80px 80px 80px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .engine__content {
-    padding: 120px 150px;
+    padding: 14% 10% 9% 10%;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -85,7 +80,7 @@
     font-size: 20px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .engine__list-item {
     font-size: 24px;
     line-height: 35px;
@@ -132,25 +127,25 @@
     line-height: 47px;
     text-align: left;
     font-size: 34px;
-    margin: 0 0 10px 0;
-    top: -55px;
+    top: -40px;
   }
 }
 @media screen and (min-width: 1024px) {
   .engine__title {
-    margin: 0 0 -20px 0;
-    top: -30px;
+    top: -20px;
   }
 }
 @media screen and (min-width: 1440px) {
   .engine__title {
     margin: 0 0 -50px 0;
-    top: 0px;
+    top: -50px;
+    font-size: 48px;
   }
 }
 @media screen and (min-width: 1920px) {
   .engine__title {
     font-size: 68px;
+    top: 0;
   }
 }
 .engine__wrapper-content {
@@ -272,7 +267,7 @@
     margin: 15px 0 35px 0;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1300px) {
   .generalInfo__subtitle {
     font-size: 20px;
     margin: 40px 0 75px 0;
@@ -288,36 +283,25 @@
   color: #2B2E3E;
   line-height: 30px;
   letter-spacing: -0.6px;
-  white-space: pre;
+  white-space: normal;
   padding: 0;
 }
 
 @media screen and (min-width: 768px) {
   .generalInfo__title {
-    font-size: 27px;
-    line-height: 27px;
+    font-size: 40px;
+    line-height: 40px;
     letter-spacing: -1.36px;
     margin: 0;
     max-width: 391px;
+    white-space: pre;
   }
 }
-@media screen and (min-width: 1024px) {
-  .generalInfo__title {
-    font-size: 36px;
-    line-height: 36px;
-    max-width: 804px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .generalInfo__title {
-    font-size: 51px;
-    line-height: 51px;
-  }
-}
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1300px) {
   .generalInfo__title {
     font-size: 68px;
     line-height: 65px;
+    max-width: 804px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -357,11 +341,12 @@
 @media screen and (min-width: 380px) {
   .generalInfo__wrapper-recall-time {
     font: 400 14px "Gilroy Medium", "Arial", "sans-serif";
+    padding: 30px 0;
   }
 }
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 768px) {
   .generalInfo__wrapper-recall-time {
-    padding: 30px 0;
+    padding: 34px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -625,7 +610,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .technologies__content {
     border-radius: 60px;
     padding: 120px 0 135px 0;
@@ -694,7 +679,7 @@
   line-height: 20px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .technologies__subtitle {
     font-size: 24px;
     line-height: 30px;
@@ -715,7 +700,7 @@
   letter-spacing: -0.6px;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .technologies__title {
     font-size: 68px;
     line-height: 65px;
