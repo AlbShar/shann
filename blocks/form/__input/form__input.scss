@@ -1,17 +1,27 @@
-
 .form__input {
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: $color_background_input;
-    border: none;
-    width: 100%;
-    max-width: 290px;
-    height: 55px;
-    padding: 17px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: $color_background_input;
+  border: none;
+  width: 100%;
+  height: 55px;
+  padding: 17px 20px;
 }
 
-  @media screen and (min-width: 768px) {
-    .form__input {
-        max-width: 100%;
-    }
+@media screen and (min-width: 768px) {
+  .form__input {
+    max-width: 100%;
+    flex-basis: 33%;
   }
+
+  .form__input[type="textarea"] {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .form__input:not([type="textarea"]) {
+    width: 300px;
+  }
+
+}
