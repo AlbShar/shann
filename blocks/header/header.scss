@@ -22,7 +22,7 @@
 }
 
 .header__phone-number {
-  font: 700 14px "Gilroy Bold", "Arial", "sans-serif";
+  font: 700 13px "Gilroy Bold", "Arial", "sans-serif";
   color: $color_text_default;
   text-decoration: none;
 }
@@ -41,6 +41,10 @@
 
   .header__content {
     padding: 15px;
+  }
+
+  .header__phone-number {
+    font-size: 14px;
   }
 }
 
