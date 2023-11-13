@@ -1,8 +1,8 @@
-@import "./__background/popup__background.scss";
 @import "./__content/popup__content.scss";
 @import "./__title/popup__title.scss";
 @import "./__subtitle/popup__subtitle.scss";
-@import "./__police/popup__police.scss";
+@import "./__close-btn/popup__close-btn.scss";
+@import "./__close-icon/popup__close-icon.scss";
 
 .popup {
     position: fixed;
@@ -15,7 +15,5 @@
     background-color: rgba(0,0,0,0.5);
     padding-top: 15px;
 
-    @media screen and (max-width: 459.8px) {
-        padding: 10px;
-    }
+
 }

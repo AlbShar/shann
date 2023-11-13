@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SHANN</title>
-  <link rel="stylesheet" href="./fonts/styles/fonts.css" />
-  <link rel="stylesheet" href="./blocks/styles/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script type="module" src="./blocks/script.js"></script>
-
-</head>
-<body class="body">
-  <main class="main">
-    <section class="popup">
-      <article class="popup__background">
-        <div class="popup__content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHANN</title>
+    <link rel="stylesheet" href="./fonts/styles/fonts.css" />
+    <link rel="stylesheet" href="./blocks/styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script type="module" src="./blocks/script.js"></script>
+  </head>
+  <body class="body">
+    <main class="main">
+      <section class="popup">
+        <article class="popup__content">
+          <button class="popup__close-btn">
+            <img
+              src="./blocks/popup/img/close.svg"
+              alt="Иконка закрыть"
+              class="popup__close-icon"
+            />
+          </button>
           <h2 class="popup__title">Оставить заявку на консультацию</h2>
-          <h3 class="popup__subtitle">Оставьте заявку – и наш менеджер свяжется с вами, узнает ваши потребности и предложит идеальный погрузчик под ваши задачи.</h3>
+          <h3 class="popup__subtitle">
+            Оставьте заявку – и наш менеджер свяжется с вами, узнает ваши
+            потребности и предложит идеальный погрузчик под ваши задачи.
+          </h3>
           <form action="#" class="form">
-            <p><input type="text" class="form__input"></p>
-            <p><input type="tel" class="form__input"></p>
-            <p><input type="email" class="form__input"></p>
-            <p><input type="textarea" class="form__input"></p>
+            <div class="form__wrapper-inputs">
+              <p><input type="text" class="form__input" placeholder="Имя" /></p>
+              <p>
+                <input type="tel" class="form__input" placeholder="Телефон" />
+              </p>
+              <p>
+                <input type="email" class="form__input" placeholder="Email" />
+              </p>
+            </div>
+            <p>
+              <input
+                type="textarea"
+                class="form__input"
+                placeholder="Комментарий"
+              />
+            </p>
             <button class="button-get-offer">Отправить заявку</button>
+            <div class="form__police">
+              Нажимая кнопку «Отправить заявку», вы соглашаетесь с
+              <a href="#" class="form__link"> Политикой конфиденциальности</a>
+            </div>
           </form>
-          <div class="popup__police">Нажимая кнопку «Отправить заявку», вы соглашаетесь с Политикой конфиденциальности</div>
+        </article>
+      </section>
+      <section class="generalInfo">
+        <div class="header">
+          <div class="generalInfo__container">
+            <section class="header__content">
+              <img
+                src="./blocks/header/img/logo.svg"
+                alt="logo"
+                class="header__logo"
+              />
+              <article class="header__container">
+                <span class="header__phone-number">8 800 555 80 80</span>
+                <button class="header__button-call button-call">
+                  <img
+                    src="./blocks/img/phone.svg"
+                    alt="phone"
+                    class="button-call__img"
+                  />
+                  <span class="button-call__text"> Заказать звонок</span>
+                </button>
+              </article>
+            </section>
+          </div>
         </div>
-      </article>
-    </section>
-    <section class="generalInfo">
-      <div class="header">
-        <div class="generalInfo__container">
-          <section class="header__content">
-            <img src="./blocks/header/img/logo.svg" alt="logo" class="header__logo" />
-            <article class="header__container">
-              <span class="header__phone-number">8 800 555 80 80</span>
-              <button class="header__button-call button-call">
-                <img src="./blocks/img/phone.svg" alt="phone" class="button-call__img" />
-                <span class="button-call__text"> Заказать звонок</span>
-              </button>
-            </article>
-          </section>
-        </div>
-      </div>
 
-        
         <div class="generalInfo__container">
           <div class="generalInfo__content">
-            <img src="./blocks/generalInfo/img/loader.png" alt="погрузчик" class="generalInfo__img" />
+            <img
+              src="./blocks/generalInfo/img/loader.png"
+              alt="погрузчик"
+              class="generalInfo__img"
+            />
 
             <article class="generalInfo__wrapper-text">
               <h1 class="generalInfo__title">
                 электромобильный вилочный погрузчик
-                <span class="generalInfo__title_color">нового поколения SHANN</span>
+                <span class="generalInfo__title_color"
+                  >нового поколения SHANN</span
+                >
               </h1>
               <h2 class="generalInfo__subtitle">
                 Оставьте заявку и получите консультацию специалиста
@@ -70,68 +104,82 @@
             </article>
           </div>
         </div>
-    </section>
-    <section class="technologies" >
-      <div class="container">
-        <div class="technologies__content">
-          <h3 class="technologies__title">
-            эволюционные <span class="technologies__title_color">технологии</span>
-          </h3>
-          <h4 class="technologies__subtitle">
-            Технологии электромобиля в вилочном погрузчике
-          </h4>
-          <section class="technologies__wrappers-imgs">
-            <article class="technologies__wrapper-img">
-              <img src="./blocks/technologies/img/img2.png" alt="img2" class="technologies__img" />
-            </article>
-            <article class="technologies__wrapper-img">
-              <img src="./blocks/technologies/img/img1.png" alt="img1" class="technologies__img" />
-              <div class="technologies__description">
-                <img src="./blocks/technologies/img/arrow-left.svg" alt="стрелка влево"
-                  class="technologies__arrow-left" />
-                Корпус изготовлен из высокопрочной стали
-              </div>
-            </article>
-          </section>
+      </section>
+      <section class="technologies">
+        <div class="container">
+          <div class="technologies__content">
+            <h3 class="technologies__title">
+              эволюционные
+              <span class="technologies__title_color">технологии</span>
+            </h3>
+            <h4 class="technologies__subtitle">
+              Технологии электромобиля в вилочном погрузчике
+            </h4>
+            <section class="technologies__wrappers-imgs">
+              <article class="technologies__wrapper-img">
+                <img
+                  src="./blocks/technologies/img/img2.png"
+                  alt="img2"
+                  class="technologies__img"
+                />
+              </article>
+              <article class="technologies__wrapper-img">
+                <img
+                  src="./blocks/technologies/img/img1.png"
+                  alt="img1"
+                  class="technologies__img"
+                />
+                <div class="technologies__description">
+                  <img
+                    src="./blocks/technologies/img/arrow-left.svg"
+                    alt="стрелка влево"
+                    class="technologies__arrow-left"
+                  />
+                  Корпус изготовлен из высокопрочной стали
+                </div>
+              </article>
+            </section>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="engine" >
-      <div class="container">
-        <div class="engine__content">
-         
-          <section class="engine__wrapper-content">
-             <h3 class="engine__title">
-            двигатель <span class="engine__title_color">и АКБ</span>
-          </h3>
-            <article class="engine__wrapper-list">
-              <ul class="engine__list">
-                <li class="engine__list-item">
-                  1,5 часа составляет время зарядки
-                </li>
-                <li class="engine__list-item">
-                  Однократная потребляемая мощность АКБ 15 кВт/ч (30% экономия
-                  затрат на электроэнергию)
-                </li>
-                <li class="engine__list-item">
-                  Интеллектуальный контроль температуры
-                </li>
-                <li class="engine__list-item">
-                  Синхронный двигатель с постоянными магнитами
-                </li>
-                <li class="engine__list-item">
-                  Несколько режимов работы: ECO, STANDARD, POWER
-                </li>
-              </ul>
-            </article>
-            <article class="engine__wrapper-img">
-              <img src="./blocks/engine/img/engine.png" alt="двигатель" class="engine__img" />
-            </article>
-          </section>
+      </section>
+      <section class="engine">
+        <div class="container">
+          <div class="engine__content">
+            <section class="engine__wrapper-content">
+              <h3 class="engine__title">
+                двигатель <span class="engine__title_color">и АКБ</span>
+              </h3>
+              <article class="engine__wrapper-list">
+                <ul class="engine__list">
+                  <li class="engine__list-item">
+                    1,5 часа составляет время зарядки
+                  </li>
+                  <li class="engine__list-item">
+                    Однократная потребляемая мощность АКБ 15 кВт/ч (30% экономия
+                    затрат на электроэнергию)
+                  </li>
+                  <li class="engine__list-item">
+                    Интеллектуальный контроль температуры
+                  </li>
+                  <li class="engine__list-item">
+                    Синхронный двигатель с постоянными магнитами
+                  </li>
+                  <li class="engine__list-item">
+                    Несколько режимов работы: ECO, STANDARD, POWER
+                  </li>
+                </ul>
+              </article>
+              <article class="engine__wrapper-img">
+                <img
+                  src="./blocks/engine/img/engine.png"
+                  alt="двигатель"
+                  class="engine__img"
+                />
+              </article>
+            </section>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
