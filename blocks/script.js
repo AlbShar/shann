@@ -1,8 +1,23 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
+
+  const btn = document.querySelector(".button-call");
+  const btnClose = document.querySelector(".popup__close-btn");
+  const popup = document.querySelector(".popup");
+
+  btn.addEventListener('click', () => {
+    popup.style.display = "block";
+  })
+
+   btnClose.addEventListener("click", () => {
+     popup.style.display = "none";
+   });
+
+  
   const technologies = document.querySelector(".technologies");
   const engine = document.querySelector(".engine");
-  let lastScrollPosition =
-  window.scrollY || document.documentElement.scrollTop;
+  let lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
 
   function handleScroll() {
     const rectTechnologies = technologies.getBoundingClientRect();
