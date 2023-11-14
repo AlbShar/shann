@@ -48,6 +48,14 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .header__phone-number {
+    font-weight: normal;
+  }
+}
+
+
+
 @media screen and (min-width: 768px) {
   .header__phone-number {
     font-size: 18px;
