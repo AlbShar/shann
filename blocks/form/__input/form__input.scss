@@ -8,8 +8,12 @@
   padding: 17px 20px;
 }
 
-.form__input[type="textarea"] {
-  height: 40px;
+
+@media screen and (min-width: 380px) {
+   .form__input[type="textarea"] {
+    height: 120px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -18,9 +22,10 @@
     flex-basis: 33%;
   }
 
-  .form__input[type="textarea"] {
+   .form__input[type="textarea"] {
     height: 180px;
   }
+ 
 
   .form__input:not([type="textarea"]) {
     max-width: 95%;

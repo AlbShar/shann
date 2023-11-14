@@ -484,7 +484,7 @@
   border-radius: 5px;
   background-color: #009BFF;
   color: #ffffff;
-  padding: 18px 60px;
+  padding: 18px 55px;
   border: none;
   font: 700 14px "Gilroy Bold", "Arial", "sans-serif";
   cursor: pointer;
@@ -770,9 +770,14 @@
           transform: translate(-50%, -50%);
   top: 43%;
   left: 50%;
-  padding: 25px 20px 20px 20px;
+  padding: 15px;
 }
 
+@media screen and (min-width: 380px) {
+  .popup__content {
+    padding: 25px 20px 20px 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .popup__content {
     max-width: 700px;
@@ -814,10 +819,15 @@
   text-align: center;
   font: 400 14px "Gilroy Regular", "Arial", "sans-serif";
   color: #2B2E3E;
-  margin: 16px 0 25px 0;
+  margin: 16px 0;
   line-height: 20px;
 }
 
+@media screen and (min-width: 380px) {
+  .popup__subtitle {
+    margin: 16px 0 25px 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .popup__subtitle {
     text-align: left;
@@ -867,10 +877,11 @@
   padding: 17px 20px;
 }
 
-.form__input[type=textarea] {
-  height: 40px;
+@media screen and (min-width: 380px) {
+  .form__input[type=textarea] {
+    height: 120px;
+  }
 }
-
 @media screen and (min-width: 768px) {
   .form__input {
     max-width: 100%;

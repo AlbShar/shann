@@ -2,8 +2,14 @@
   text-align: center;
   font: 400 14px "Gilroy Regular", "Arial", "sans-serif";
   color: $color_text_default;
-  margin: 16px 0 25px 0;
+  margin: 16px 0;
   line-height: 20px;
+}
+
+@media screen and (min-width: 380px) {
+  .popup__subtitle {
+    margin: 16px 0 25px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
