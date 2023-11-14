@@ -1,20 +1,21 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
-
-  const btn = document.querySelector(".button-call");
+  const buttons = document.querySelectorAll('[id*="btn"]');
   const btnClose = document.querySelector(".popup__close-btn");
   const popup = document.querySelector(".popup");
+  const body = document.querySelector("body");
 
-  btn.addEventListener('click', () => {
-    popup.style.display = "block";
-  })
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      popup.style.display = "block";
+      body.style.overflow = "hidden";
+    });
+  });
 
-   btnClose.addEventListener("click", () => {
-     popup.style.display = "none";
-   });
+  btnClose.addEventListener("click", () => {
+    popup.style.display = "none";
+    body.style.overflow = "auto";
+  });
 
-  
   const technologies = document.querySelector(".technologies");
   const engine = document.querySelector(".engine");
   let lastScrollPosition = window.scrollY || document.documentElement.scrollTop;

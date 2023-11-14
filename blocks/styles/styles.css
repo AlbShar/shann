@@ -348,7 +348,7 @@
 }
 @media screen and (min-width: 768px) {
   .generalInfo__wrapper-recall-time {
-    padding: 34px 0;
+    padding: 26px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -498,7 +498,7 @@
 @media screen and (min-width: 768px) {
   .button-get-offer {
     max-width: 258px;
-    padding: 15px;
+    padding: 10px;
     margin: 0 15px 0 0;
     font-size: 16px;
   }
@@ -874,6 +874,9 @@
   }
   .form__input[type=textarea] {
     height: 180px;
+  }
+  .form__input:not([type=textarea]) {
+    max-width: 95%;
   }
 }
 @media screen and (min-width: 1920px) {

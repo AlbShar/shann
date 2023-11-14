@@ -21,7 +21,12 @@
   .form__input[type="textarea"] {
     height: 180px;
   }
+
+  .form__input:not([type="textarea"]) {
+    max-width: 95%;
+  }
 }
+
 
 @media screen and (min-width: 1920px) {
   .form__input:not([type="textarea"]) {
