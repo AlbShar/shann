@@ -1,15 +1,20 @@
 .popup__subtitle {
-    text-align: center;
-    font: 400 14px "Gilroy Regular", "Arial", "sans-serif";
-    color: $color_text_default;
-    margin: 16px 0 25px 0;
-    line-height: 20px;
+  text-align: center;
+  font: 400 14px "Gilroy Regular", "Arial", "sans-serif";
+  color: $color_text_default;
+  margin: 16px 0 25px 0;
+  line-height: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .popup__subtitle {
     text-align: left;
     font-size: 16px;
-}
+  }
 }
 
+@media screen and (min-width: 1920px) {
+  .popup__subtitle {
+    margin: 34px 0;
+  }
+}
