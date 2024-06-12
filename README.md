@@ -1,5 +1,5 @@
 ## Тестовое задание для веб-разработчика (ПандаВоркс)
-
+## This project is tested with BrowserStack.
 
 ### Задача:
 
